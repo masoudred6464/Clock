@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: url(images/clock.png);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px 15px #202020,
+                inset -10px -10px 15px #202020;
+}
+.clock::before{
+    content: "";
+    background: #570fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 4;
+}
+.sec , .min , .hour{
+
+    /* background-color: rgb(207, 185, 185); */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* transform: rotateZ(90deg); */
+}
+.sec{
+    width: 230px;
+    height: 230px;
+}
+.min{
+    width: 190px;
+    height: 190px;
+}
+.hour{
+    width: 160px;
+    height:160px;
+}
+.sec::before{
+    content: "";
+    width: 2px;
+    height: 150px;
+    /* position: absolute; */
+    background: #ff1010;
+    z-index: 3;
+    border-radius: 6px 6px 0 0;
+    /* transform: rotateZ(90deg);به کانتینر باید بدیم */
+
+}
+
+.min::before{
+    content: "";
+    width: 4px;
+    height: 90px;
+    /* position: absolute; */
+    background: #fd03be;
+    z-index: 2;
+    border-radius: 6px 6px 0 0;
+    /* transform: rotateZ(90deg);به کانتینر باید بدیم */
+
+}
+
+.hour::before{
+    content: "";
+    width: 8px;
+    height: 80px;
+    /* position: absolute; */
+    background: #17fb02;
+    z-index: 1;
+    border-radius: 6px 6px 0 0;
+    /* transform: rotateZ(90deg);به کانتینر باید بدیم */
+
+}
