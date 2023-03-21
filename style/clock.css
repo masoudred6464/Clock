@@ -18,7 +18,7 @@ body{
     position: relative;
     width: 350px;
     height: 350px;
-    background: url(images/clock.png);
+    background: url(images/clock.jpg);
     background-size: cover;
     border-radius: 50%;
     box-shadow: inset 10px 10px 15px #202020,
